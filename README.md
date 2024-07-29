@@ -32,7 +32,7 @@ Click the "Delete" button next to the task you want to remove.
 Click the mode toggle button to enable or disable dark mode.
 
 ## Links
-* Visualization of the project on [Vercel](https://vercel.com/): 
+* Visualization of the project on [Vercel](https://vercel.com/): https://task-list-henna.vercel.app/
 
 ## Contributing
 
