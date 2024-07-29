@@ -89,23 +89,8 @@ function createDeleteButton (list) {
 
 function saveTasks (allTasks) {
     
-    const tasks = allTasks.querySelectorAll ('li');
-    const tasksArray = [];
-
-    for (let value of tasks) {
-
-        let taskText = value.innerText;
-
-        taskText = taskText.replace ('Apagar', '').trim ();
-
-        tasksArray[tasksArray.length] = taskText;
-
-    }
-
-    const tasksJson = JSON.stringify (tasksArray);
-    localStorage.setItem ('tasks', tasksJson);
-
-    return true;
+    const tasks = [...allTasks.querySelectorAll('li')].map(task => task.innerText.replace('Apagar', '').trim());
+    localStorage.setItem('tasks', JSON.stringify(tasks));
 
 }
 
